@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/char_todesimalpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:id="@+id/title_char"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="changeNumber"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/app_title_char"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_area_char"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title_char"
+            android:layout_margin="10dp"
+            android:background="@color/input_block_bg"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/asciicode"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="A"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#131321"
+                android:textColorHighlight="@color/title_block"
+                android:textColorHint="#4f6a83"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/insertValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="AddValue"
+                android:text="Get Value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/output_area"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/input_area_char"
+            android:layout_margin="10dp"
+            android:background="@color/output_block_bg"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/output_Value"
+                android:hint="@string/output_hint_number"
+                android:textSize="100sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/number_tocharpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <LinearLayout
+            android:id="@+id/title_number"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:onClick="changeChar"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="casual"
+                android:text="@string/app_title_number"
+                android:textAlignment="center"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/input_area_number"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title_number"
+            android:layout_margin="10dp"
+            android:background="@color/input_block_bg"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/asciinumber"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:ems="10"
+                android:hint="65"
+                android:inputType="number"
+                android:maxLength="1"
+                android:singleLine="true"
+                android:textAlignment="center"
+                android:textColor="#131321"
+                android:textColorHighlight="@color/title_block"
+                android:textColorHint="#4f6a83"
+                android:textSize="60sp" />
+
+            <Button
+                android:id="@+id/insertnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:onClick="AddValue"
+                android:text="Get Value" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/output_area_number"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/input_area_number"
+            android:layout_margin="10dp"
+            android:background="@color/output_block_bg"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/char_output"
+                android:hint="@string/output_hint_char"
+                android:textSize="100sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</FrameLayout>

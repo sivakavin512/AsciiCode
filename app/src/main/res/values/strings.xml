@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AsciiCode</string>
+
+    <string name="app_title_char"> Ascii==Number </string>
+    <string name="input_hint_char">A</string>
+    <string name="output_hint_number">65</string>
+
+
+    <string name="app_title_number"> Number==Ascii </string>
+    <string name="input_hint_number">65</string>
+    <string name="output_hint_char">A</string>
+
+</resources>
