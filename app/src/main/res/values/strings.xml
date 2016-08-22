@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AsciiCode</string>
+    <string name="app_name">AsciiToDesimal</string>
 
     <string name="app_title_char"> Ascii==Number </string>
     <string name="input_hint_char">A</string>
